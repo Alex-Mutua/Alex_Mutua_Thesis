@@ -101,27 +101,15 @@ Instead of minimizing squared error, SVR fits a function that **remains as flat 
 SVR solves the optimization problem:
 
 ```
-$$
-\min_{w,b,\xi_i,\xi_i^*} \quad \frac{1}{2} \|w\|^2 + C \sum_{i=1}^{n} (\xi_i + \xi_i^*)
-$$
-```
+minimize over w, b, ξᵢ, ξᵢ*:
 
-Subject to:
+(1/2)||w||² + C ∑_{i=1}^{n} (ξᵢ + ξᵢ*)
 
-```
-$$
-\begin{aligned}
-y_i - (w \cdot x_i + b) &\leq \varepsilon + \xi_i \\
-(w \cdot x_i + b) - y_i &\leq \varepsilon + \xi_i^* \\
-\xi_i, \xi_i^* &\geq 0, \quad i = 1, \dots, n
-\end{aligned}
-$$
-```
-Model Definition
-```
-$$
-f(x) = w \cdot x + b
-$$
+subject to:
+
+yᵢ − (w · xᵢ + b) ≤ ε + ξᵢ  
+(w · xᵢ + b) − yᵢ ≤ ε + ξᵢ*  
+ξᵢ ≥ 0,  ξᵢ* ≥ 0
 ```
 
 Where:
