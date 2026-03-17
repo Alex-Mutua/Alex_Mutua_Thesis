@@ -96,21 +96,22 @@ Instead of minimizing squared error, SVR fits a function that **remains as flat 
 
 ---
 
+
 ## Mathematical Formulation
 
 SVR solves the optimization problem:
 
-```
-minimize over w, b, ξᵢ, ξᵢ*:
 
-(1/2)||w||² + C ∑_{i=1}^{n} (ξᵢ + ξᵢ*)
+min (1/2)||w||² + C Σ (ξ_i + ξ_i*)
 
-subject to:
 
-yᵢ − (w · xᵢ + b) ≤ ε + ξᵢ  
-(w · xᵢ + b) − yᵢ ≤ ε + ξᵢ*  
-ξᵢ ≥ 0,  ξᵢ* ≥ 0
-```
+Subject to:
+
+
+y_i − (w·x_i + b) ≤ ε + ξ_i
+(w·x_i + b) − y_i ≤ ε + ξ_i*
+ξ_i , ξ_i* ≥ 0
+
 
 Where:
 
