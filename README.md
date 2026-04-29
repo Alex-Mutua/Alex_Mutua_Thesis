@@ -422,7 +422,7 @@ This work was carried out at **AIMS Senegal** in partial fulfilment of the requi
 Except where due acknowledgement is made, I hereby declare that this work has **never been presented wholly or in part for the award of a degree** at AIMS Senegal or any other university.
 
 **Author:** Alex Vundi Mutua  
-**Supervisor:** Dr. Ya'e Ulrich Gaba  
+**Supervisor:** Dr. Ya'e Ulrich Gaba | Mamadou Pathé Ly
 
 <br>
 
